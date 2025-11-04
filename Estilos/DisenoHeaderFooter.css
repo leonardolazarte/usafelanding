@@ -198,8 +198,8 @@ li a:hover{
 }
 .ima3{
     position: absolute;
-    left: 78%;
-    margin-top: 250px;
+    left: 85%;
+    margin-top: 150px;
     width: 85%;
     animation: move_vector 6s ease-in-out infinite;
 }
@@ -1237,4 +1237,5 @@ footer{
    }
 
 }
+
 
