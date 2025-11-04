@@ -12,9 +12,8 @@
     
 
 }
-.fondo{
-    max-width: 2000px;
-    background-color: #dec6a8;
+#Pagina_Servici {
+    background-color: #dec6a8; /* tu naranja/beige */
 }
 .S{
     position: absolute;
@@ -542,4 +541,5 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     }
 
 }
+
 
