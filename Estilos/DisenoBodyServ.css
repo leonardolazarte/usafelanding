@@ -23,7 +23,7 @@
     margin-top: -7.5%;
     color: rgb(215, 177, 126);
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px #78acc2;
+    text-shadow: 2px 2px 5px #dec6a8;
     
 }
 .card{
@@ -542,3 +542,4 @@ input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
     }
 
 }
+
