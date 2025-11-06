@@ -877,7 +877,7 @@ footer{
         margin-right: 0px;
     }
     .contenedor_info h1{
-        margin-top: 30px;
+        margin-top: 0px;
         font-size: 55px;
     }
     .contenedor_info h2{
@@ -1237,6 +1237,7 @@ footer{
    }
 
 }
+
 
 
 
