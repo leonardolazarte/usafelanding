@@ -261,8 +261,8 @@ li a:hover{
 
 .b1:hover{
     color: rgb(255, 255, 255);
-    background-color:  rgb(118, 185, 230);
-    border-color: rgb(118, 185, 230);
+    background-color:  rgb(206, 123, 8);
+    border-color: rgb(206, 123, 8);
     transition: 0.8s all;
     transform: scale(1.1);
     cursor: pointer;
@@ -1237,6 +1237,7 @@ footer{
    }
 
 }
+
 
 
 
