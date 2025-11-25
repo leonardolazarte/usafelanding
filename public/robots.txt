@@ -1,7 +1,0 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://usafe-prototipo-60k3hv.teleporthq.app/sitemap.xml
