@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Estadisticas - exported project</title>
+    <meta property="og:title" content="Estadisticas - exported project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}pre {  white-space: normal;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./estadisticas.css" rel="stylesheet" />
+
+      <div class="estadisticas-container1">
+        <navbar4-wrapper class="navbar4-wrapper">
+          <!--Navbar4 component-->
+          <header class="navbar4-container">
+            <header data-thq="thq-navbar" class="navbar4-navbar-interactive">
+              <div data-thq="thq-navbar-nav" class="navbar4-desktop-menu">
+                <nav class="navbar4-links1">
+                  <a href="/.html" class="thq-body-small thq-link">
+                    <fragment class="estadisticas-fragment10">
+                      <span class="estadisticas-text10">Inicio</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://www.teleporthq.io"
+                    class="thq-body-small thq-link"
+                  >
+                    <fragment class="estadisticas-fragment11">
+                      <span class="estadisticas-text11">Mi perfil</span>
+                    </fragment>
+                  </a>
+                  <a href="/estadisticas.html" class="thq-body-small thq-link">
+                    <fragment class="estadisticas-fragment12">
+                      <span class="estadisticas-text12">Reportar</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://www.teleporthq.io"
+                    class="thq-body-small thq-link"
+                  >
+                    <fragment class="estadisticas-fragment13">
+                      <span class="estadisticas-text13">Ver Reportes</span>
+                    </fragment>
+                  </a>
+                  <a
+                    href="https://www.teleporthq.io"
+                    class="thq-body-small thq-link"
+                  >
+                    <fragment class="estadisticas-fragment14">
+                      <span class="estadisticas-text14">Mapa</span>
+                    </fragment>
+                  </a>
+                  <a href="/estadisticas.html" class="thq-body-small thq-link">
+                    <fragment class="estadisticas-fragment15">
+                      <span class="estadisticas-text15">Estadísticas</span>
+                    </fragment>
+                  </a>
+                </nav>
+                <div class="navbar4-buttons1"></div>
+              </div>
+              <div data-thq="thq-burger-menu" class="navbar4-burger-menu">
+                <svg viewBox="0 0 1024 1024" class="navbar4-icon1">
+                  <path
+                    d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+              <div data-thq="thq-mobile-menu" class="navbar4-mobile-menu">
+                <div class="navbar4-nav">
+                  <div class="navbar4-top">
+                    <img
+                      alt="logo"
+                      src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84ec08e8-34e9-42c7-9445-d2806d156403/fac575ac-7a41-484f-b7ac-875042de11f8?org_if_sml=1&amp;force_format=original"
+                      class="navbar4-logo"
+                    />
+                    <div data-thq="thq-close-menu" class="navbar4-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="navbar4-icon3">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="navbar4-links2">
+                    <a href="/.html" class="thq-body-small thq-link">
+                      <fragment class="estadisticas-fragment10">
+                        <span class="estadisticas-text10">Inicio</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="https://www.teleporthq.io"
+                      class="thq-body-small thq-link"
+                    >
+                      <fragment class="estadisticas-fragment11">
+                        <span class="estadisticas-text11">Mi perfil</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="/estadisticas.html"
+                      class="thq-body-small thq-link"
+                    >
+                      <fragment class="estadisticas-fragment12">
+                        <span class="estadisticas-text12">Reportar</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="https://www.teleporthq.io"
+                      class="thq-body-small thq-link"
+                    >
+                      <fragment class="estadisticas-fragment13">
+                        <span class="estadisticas-text13">Ver Reportes</span>
+                      </fragment>
+                    </a>
+                    <a
+                      href="https://www.teleporthq.io"
+                      class="thq-body-small thq-link"
+                    >
+                      <fragment class="estadisticas-fragment14">
+                        <span class="estadisticas-text14">Mapa</span>
+                      </fragment>
+                    </a>
+                  </nav>
+                </div>
+                <div class="navbar4-buttons2">
+                  <button>Login</button>
+                  <button>Register</button>
+                </div>
+              </div>
+            </header>
+          </header>
+        </navbar4-wrapper>
+        <contact-form10-wrapper class="contact-form10-wrapper">
+          <!--ContactForm10 component-->
+          <div class="contact-form10-contact11 thq-section-padding">
+            <div class="contact-form10-max-width thq-section-max-width">
+              <div class="contact-form10-section-title thq-card">
+                <div class="contact-form10-content1">
+                  <h2 class="thq-heading-2">
+                    <fragment class="estadisticas-fragment17">
+                      <span class="estadisticas-text17">Estadísticas</span>
+                    </fragment>
+                  </h2>
+                </div>
+              </div>
+              <div class="contact-form10-content2">
+                <form
+                  data-form-id="0449f510-3816-40f8-805c-976951b064ab"
+                  class="contact-form10-form thq-card"
+                >
+                  <div class="contact-form10-input1">
+                    <label for="contact-form-10-name" class="thq-body-small">
+                      Tipo
+                    </label>
+                    <select
+                      id="contact-form-10-options"
+                      placeholder="Select one"
+                      name="ingresar distrito
+"
+                      data-form-field-id="contact-form-10-options"
+                      class="thq-select"
+                    >
+                      <option value="Option 1">Feature request</option>
+                      <option value="Option 1">Customer Service</option>
+                    </select>
+                  </div>
+                  <div class="contact-form10-input2">
+                    <label for="contact-form-10-email" class="thq-body-small">
+                      Últimos
+                    </label>
+                    <select
+                      id="contact-form-10-options"
+                      placeholder="Select one"
+                      name="ingresar distrito
+"
+                      data-form-field-id="contact-form-10-options"
+                      class="thq-select"
+                    >
+                      <option value="Option 1">Feature request</option>
+                      <option value="Option 1">Customer Service</option>
+                    </select>
+                  </div>
+                  <div class="contact-form10-container">
+                    <div class="contact-form10-input3">
+                      <label
+                        for="contact-form-10-options"
+                        class="thq-body-small"
+                      >
+                        Ingresar Distrito
+                      </label>
+                      <select
+                        id="contact-form-10-options"
+                        placeholder="Select one"
+                        name="ingresar distrito
+"
+                        data-form-field-id="contact-form-10-options"
+                        class="thq-select"
+                      >
+                        <option value="Option 1">Feature request</option>
+                        <option value="Option 1">Customer Service</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="contact-form10-input4"></div>
+                  <div class="contact-form10-checkbox1">
+                    <input
+                      type="checkbox"
+                      id="contact-form-10-check"
+                      checked="false"
+                      required="true"
+                      defaultchecked="true"
+                      name="contact-form-10-check"
+                      data-form-field-id="contact-form-10-check"
+                      class="thq-checkbox"
+                    />
+                    <label for="contact-form-10-check" class="thq-body-small">
+                      I accept the Terms
+                    </label>
+                  </div>
+                  <button
+                    type="submit"
+                    name="button ugumsbnwnq"
+                    data-form-field-id="button ugumsbnwnq"
+                    class="thq-button-filled"
+                  >
+                    <span class="thq-body-small">
+                      <fragment class="estadisticas-fragment18">
+                        <span class="estadisticas-text18">PDF</span>
+                      </fragment>
+                    </span>
+                  </button>
+                  <button
+                    type="submit"
+                    name="button ugumsbnwnq"
+                    id="thq_button ugumsbnwnq_4TfL"
+                    data-form-field-id="thq_button ugumsbnwnq_4TfL"
+                    class="thq-button-filled"
+                  >
+                    <span class="thq-body-small">
+                      <fragment class="estadisticas-fragment21">
+                        <span class="estadisticas-text21">Excel</span>
+                      </fragment>
+                    </span>
+                  </button>
+                </form>
+                <div class="contact-form10-content3 thq-card">
+                  <div class="contact-form10-row1 thq-flex-row">
+                    <div class="contact-form10-content4">
+                      <div class="contact-form10-contact-info1">
+                        <h3 class="thq-heading-3">Incidentes totales</h3>
+                        <span class="thq-body-small">
+                          <fragment class="estadisticas-fragment20">
+                            <span class="estadisticas-text20">
+                              Esta semana: 32
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="contact-form10-content5">
+                      <div class="contact-form10-contact-info2">
+                        <h3 class="thq-heading-3">Promedio diario: 4</h3>
+                        <span class="thq-body-small">
+                          <fragment class="estadisticas-fragment19">
+                            <span class="estadisticas-text19">
+                              Reportes verificados: 87%
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="contact-form10-contact-info3">
+                        <h3 class="contact-form10-text17 thq-heading-3">
+                          Robo: 35%
+                        </h3>
+                        <span class="thq-body-small">
+                          <fragment class="estadisticas-fragment16">
+                            <span class="estadisticas-text16">
+                              Extorsión: 20%&nbsp; &nbsp; &nbsp; &nbsp; Otros:
+                              45%&nbsp;
+                            </span>
+                          </fragment>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-form10-row2 thq-flex-row">
+                    <img
+                      alt="pastedImage"
+                      src="public/external/pastedimage-8j3-400h.png"
+                      class="contact-form10-pasted-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </contact-form10-wrapper>
+        <a href="https://play.teleporthq.io/signup" class="estadisticas-link">
+          <div
+            aria-label="Sign up to TeleportHQ"
+            class="estadisticas-container2"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 19 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="estadisticas-icon1"
+            >
+              <path
+                d="M9.1017 4.64355H2.17867C0.711684 4.64355 -0.477539 5.79975 -0.477539 7.22599V13.9567C-0.477539 15.3829 0.711684 16.5391 2.17867 16.5391H9.1017C10.5687 16.5391 11.7579 15.3829 11.7579 13.9567V7.22599C11.7579 5.79975 10.5687 4.64355 9.1017 4.64355Z"
+                fill="#B23ADE"
+              ></path>
+              <path
+                d="M10.9733 12.7878C14.4208 12.7878 17.2156 10.0706 17.2156 6.71886C17.2156 3.3671 14.4208 0.649963 10.9733 0.649963C7.52573 0.649963 4.73096 3.3671 4.73096 6.71886C4.73096 10.0706 7.52573 12.7878 10.9733 12.7878Z"
+                fill="#FF5C5C"
+              ></path>
+              <path
+                d="M17.7373 13.3654C19.1497 14.1588 19.1497 15.4634 17.7373 16.2493L10.0865 20.5387C8.67402 21.332 7.51855 20.6836 7.51855 19.0968V10.5141C7.51855 8.92916 8.67402 8.2807 10.0865 9.07221L17.7373 13.3654Z"
+                fill="#2874DE"
+              ></path>
+            </svg>
+            <span class="estadisticas-text22">Built in TeleportHQ</span>
+          </div>
+        </a>
+      </div>
+      <link
+        rel="canonical"
+        href="https://usafe-prototipo-60k3hv.teleporthq.app/estadisticas"
+      />
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
